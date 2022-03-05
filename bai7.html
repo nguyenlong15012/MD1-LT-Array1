@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let a = prompt('')
+    // let a = ['a','v','g','e','8',9,'l','k','d','10'];
+    // let index = a.indexOf('v');
+    // let i;
+    // if (index == -1){
+    //     alert('V is not in the array')
+    // }else {
+    //     alert('V is in the array')
+    // }
+    // let index1 = a.indexOf(index)
+    //     a.splice(index1,1);
+    // document.write(a);
+
+    //Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+    // Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng
+    // a(Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)
+
+    let a = [];
+    let length = 3;
+    let i;
+
+    for (i=0; i<length; i++){
+        let x = prompt('Nhập số nguyên thứ'  +(i+1))
+        a.push(x);
+    }
+    let v = prompt('Nhập ki tự');
+    for (i=0; i<a.length;i++){
+        if(v===a[i]){
+            a.splice(i,1);
+            a.push(0);
+        }
+    }
+    document.write(a.join(''))
+    console.log(a)
+
+</script>
+</body>
+</html>

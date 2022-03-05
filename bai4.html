@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập số bạn thích! ');
+    let b = a.split('');
+    let rs = '';
+    let first = 0;
+    let last = b.length - 1;
+    let c;
+    while (first<last){
+        c = b[first];
+        b[first] = b[last];
+        b[last] = c;
+        first++;
+        last--;
+    }document.write(b);
+</script>
+</body>
+</html>

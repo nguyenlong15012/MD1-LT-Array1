@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = []
+    let alength = 2;
+    let i;
+    for (i=0;i<alength;i++){
+        let x = prompt('Nhập vào số nguyên mảng a: '+ (i+1));
+        a.push(x)
+    }
+    console.log(a);
+    let b = [];
+    blength = 3;
+    for (let j = 0; j<blength; j++){
+        let y = prompt('Nhập vào số nguyên mảng b: ');
+        b.push(y);
+    }
+    console.log(b);
+
+    let c = [];
+    c = a.concat(b);
+    document.write('các phần tử trong mảng c là : '+c);
+
+</script>
+<!-- Bài 9- Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b.-->
+<!--Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên.-->
+<!--Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.-->

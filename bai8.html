@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+    // Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+    let a = [];
+    let length = 3;
+    let i;
+    for (i=0; i<length; i++){
+        let b = prompt('Nhập số: '+(i+1))
+        a.push(b);
+    }
+    console.log(a);
+    let first = 0;
+    let last = a.length - 1;
+    let min = a[0];
+    console.log(a.length);
+    for (i=0; i<a.length-1; i++){
+        // for (i=0; i<a.length;i++){
+        // for (let j = i+1; j<length; j++){
+        //     if (a[i]<a[j]){
+        //         let c = a[i];
+        //         a[i] = a[j];
+        //         a[j] = c;
+        //          }
+        //      }
+        // }
+        if(a[i]<a[i+1]){
+            let c = a[i];
+            a[i] = a[i+1];
+            a[i+1] = c;
+        }
+    }document.write(a);
+
+</script>
+</body>
+</html>
